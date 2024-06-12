@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags for character set, viewport, title, and description -->
+    
+    <!-- Google Fonts for custom typography -->
+    <!-- Boxicons for icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="no index,nofollow">
+    <meta name="description" content="Pizza website">
+    <title>Pizza shop</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="pissa.css">
+    <!-- This is the font that we'll be using -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <!-- Start of the header -->
+    <header>
+      <div class="inner">
+        <div class="logo">
+          <div>
+            <!-- logo of the website -->
+            <img src="img/Logo.jpg" alt="Logo" />
+          </div>
+        <!-- name of the store -->
+          <div class="name">
+            <h1>CHEEZY  PIZZA</h1>
+        </div>
+        </div>
+        <!-- login sec -->
+        <nav>
+          <li>
+            <span><a href="">login</a></span>
+          </li>
+          <li>
+            <span><a href="">/ sign up</a></span>
+          </li>
+        </nav>
+
+      </div>
+    </header>
+    <!-- End of the header -->
+
+    <div class="pizzaIMG">
+            <!-- a photo of cheezy pizza -->
+            <img src="https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg" alt="Logo" />
+            
+    
+    <!-- The end of Pizza Picture & the type of order-->
+
+     <div class="deal"><h2><span>Our Most Popular Deals<span></h2></div>  
+        
+
+          <div class="row">
+            <div class="column">
+              <img src="img/m1.jpg" alt="Logo"  style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/m4.jpg" alt="Logo" style="width:100%">
+             </div>
+          </div>
+    
+          <div class="row">
+            <div class="column">
+              <img src="img/m2.jpg" alt="Logo"  style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/m3.jpg" alt="Logo" style="width:100%">
+            </div>
+          </div>
+
+      
+
+    <!-- The end of deals and menu -->   
+    <!-- begging form -->      
+    <form action="/submit-order" method="post">
+        <fieldset>
+            <legend>Pizza Details</legend>
+
+            <label for="number-of-pizzas">How many pizzas?</label>
+            <input type="number" id="number-of-pizzas" name="number-of-pizzas" min="1" max="10" required>
+
+            <label for="pizza-size">What size is the pizza?</label>
+            <select id="pizza-size" name="pizza-size" required>
+                <option value="">Select size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+            </select>
+            <!-- toppings section -->
+            <fieldset>
+                <legend>Choose your toppings</legend>
+                <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+                <label><input type="checkbox" name="toppings" value="onions"> Onions</label>
+                <label><input type="checkbox" name="toppings" value="sausage"> Sausage</label>
+                <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label>
+                <label><input type="checkbox" name="toppings" value="extra-cheese"> Extra Cheese</label>
+                <label><input type="checkbox" name="toppings" value="black-olives"> Black Olives</label>
+                <label><input type="checkbox" name="toppings" value="green-peppers"> Green Peppers</label>
+                <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label>
+                <label><input type="checkbox" name="toppings" value="spinach"> Spinach</label>
+            </fieldset>
+            <!-- details -->
+            <fieldset>
+                <legend>Delivery Details</legend>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                
+            </fieldset>
+
+            <input type="submit" value="Submit Order">
+        </fieldset>
+    </form>
+    <!-- end of the form -->
+    <!-- The footer -->
+
+    <div class="footer">
+
+      <div>
+        <table > 
+          <tr>
+            <th>Menu</th>
+            <th>About Us</th>
+            <th>Policies</th>
+            <th>Customer Service</th>
+            <th>Covid-19 Measures</th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Privacy Policy</td>
+            <td>Contact Pizza King</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Terms of Use</td>
+            <td>FAQs</td>
+          </tr>
+        </table>
+
+      </div>   
+ 
+      <div class="copyRights">
+        <h4>© 2021 All rights reserved.</h4>
+      </div>
+
+    </div>
+
+    <!-- The end of footer -->
+
+
+    <script src="" async defer></script>
+  </body>
+</html>
